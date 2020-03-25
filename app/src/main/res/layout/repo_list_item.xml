@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/text_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/app_name"
+                android:textColor="@color/text_color_primary"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/text_color_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvWatcherCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_watcher_count"
+                    android:drawableLeft="@drawable/ic_watcher_count"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_color_secondary" />
+
+                <TextView
+                    android:id="@+id/tvCommitCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_code_fork"
+                    android:drawableLeft="@drawable/ic_code_fork"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_color_secondary" />
+
+
+                <TextView
+                    android:id="@+id/tvStarCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_star_count"
+                    android:drawableLeft="@drawable/ic_star_count"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_color_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_marginTop="4dp"
+                android:background="@color/text_color_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
